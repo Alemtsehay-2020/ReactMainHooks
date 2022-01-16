@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import ForUseEffect from './ForUseEffect';
+import ForUseReducer from './ForUseReducer';
+import ForUseRef from './ForUseRef';
+import ForUseImperativeHandle from './ForUserImperativeHandle/ForUseImperativeHandle';
+import ForUseState from './ForUseState';
+import ForContext from './ForUseContext/ForContext';
+import ForContextAPI from "./ForUseContextApi/ForContextAPI"
+import ForUseMemoHook from './ForUseMemoHook';
+import ForUseCallback from './ForUseCallback/ForUseCallback';
+import ParentComponent from './ForUseCallbackTWO/ParentComponent';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h2>React Hooks Practice</h2>
+     {/* <ForUseState /> */}
+     {/* <ForUseEffect/> */}
+     {/* <ForUseReducer /> */}
+     {/* <ForUseRef /> */}
+     {/* <ForUseImperativeHandle/> */}
+      {/* <ForContext/>      */}
+      {/* <ForContextAPI/> */}
+      {/* <ForUseMemoHook/> */}
+      {/* <ForUseCallback/> */}
+      <ParentComponent/>
     </div>
   );
 }
